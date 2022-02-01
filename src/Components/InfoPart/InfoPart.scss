@@ -1,0 +1,30 @@
+.infoPart__container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    width: 50%;
+}
+
+.infoPart__button--header{
+    margin-bottom: 10px;
+}
+
+.infoPart__button--container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .infoPart__container{
+        width: 90%;
+        padding: 0;
+    }
+
+    .infoPart__button--container{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+}

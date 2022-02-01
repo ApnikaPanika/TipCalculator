@@ -1,0 +1,65 @@
+.resultsPart__container {
+    background-color: hsl(183, 100%, 15%);
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.resultsPart__total--container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.resultsPart__pricing--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resultsPart__header--text {
+    color: white;
+    margin-bottom: 3px;
+}
+
+.resultsPart__person--text {
+    font-size: 14px;
+    color: hsl(185, 41%, 84%);
+}
+
+.resultsPart__money {
+    font-size: 40px;
+    color: hsl(172, 67%, 45%);
+}
+
+.resultsPart__reset {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    padding: 3px 25px;
+    border-radius: 4px;
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+        transition: 0.3;
+    }
+
+    &:active{
+        color: hsl(183, 100%, 15%);
+        background-color: hsl(185, 41%, 84%);
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .resultsPart__container{
+        display: flex;
+        width: 80%;
+    }
+}
